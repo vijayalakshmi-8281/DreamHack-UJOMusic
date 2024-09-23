@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Token ID</title>
+    <link rel="stylesheet" href="/static/tokenid.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/tokenidpage">Get Your TokenId</a></li>
+            <li><a href="/withdrawpage">Withdraw</a></li>
+        </ul>
+    </nav>
+    <h2>Get Token Details</h2>
+    <form action="/addtokenidform" method="POST">
+        <label for="tokenId">Enter Token ID:</label><br>
+        <input type="text" id="tokenId" name="tokenId" required><br>
+        <button type="submit">Get Token Details</button>
+    </form>
+    {% if response %}
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
