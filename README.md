@@ -1,2 +1,3 @@
 # DreamHack-UJOMusic
-![Logo]("D:\output.jpg")
+![Output Image](output.jpg)
+
